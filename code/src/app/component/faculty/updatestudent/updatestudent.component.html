@@ -1,0 +1,291 @@
+<div class="breatcome_area d-flex align-items-center">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="breatcome_title_inner pb-2">
+                <h2>Student Profile Update</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid">
+    <div class="row m-3 d-flex justify-content-between">
+
+        <div class="col-12 shadow_light m-3">
+
+            <h2>Student Details</h2>
+            <hr>
+
+            <form *ngIf="updatedata" [formGroup]="updatedata">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="fdesignation" class="text-dark">Father Designation</label>
+                            <input type="text" class="form-control bordercolor" id="fdesignation"
+                                aria-describedby="fdesignationHelp" placeholder="" formControlName="fdesignation"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="bplace" class="text-dark">Birth Place</label>
+                            <input type="text" class="form-control bordercolor" id="bplace"
+                                aria-describedby="bplaceHelp" placeholder="" formControlName="bplace" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="hobby" class="text-dark">Hobbies</label>
+                            <input type="text" class="form-control bordercolor" id="hobby" aria-describedby="hobbyHelp"
+                                placeholder="" formControlName="hobby" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="mpno" class="text-dark">Mother Contact Number</label>
+                            <input type="text" class="form-control bordercolor" id="mpno" aria-describedby="mpnoHelp"
+                                placeholder="" formControlName="mpno" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="fullname" class="text-dark">Full Name</label>
+                            <input type="text" class="form-control bordercolor" id="fullname"
+                                aria-describedby="fullnameHelp" placeholder="" formControlName="fullname" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="category" class="text-dark">Category</label>
+                            <input type="text" class="form-control bordercolor" id="category"
+                                aria-describedby="categoryHelp" placeholder="" formControlName="category" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="fnm" class="text-dark">Father Name</label>
+                            <input type="text" class="form-control bordercolor" id="fnm" aria-describedby="fnmHelp"
+                                placeholder="" formControlName="fnm" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="mnm" class="text-dark">Mother Name</label>
+                            <input type="text" class="form-control bordercolor" id="mnm" aria-describedby="mnmHelp"
+                                placeholder="" formControlName="mnm" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="gender" class="text-dark">Gender</label>
+                            <input type="text" class="form-control bordercolor" id="gender"
+                                aria-describedby="genderHelp" placeholder="" formControlName="gender" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="dob" class="text-dark">Date Of Birth</label>
+                            <input type="text" class="form-control bordercolor" id="dob" aria-describedby="dobHelp"
+                                placeholder="" formControlName="dob" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="adharno" class="text-dark">Adharcard Number</label>
+                            <input type="text" class="form-control bordercolor" id="adharno"
+                                aria-describedby="adharnoHelp" placeholder="" formControlName="adharno" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="bgroup" class="text-dark">Blood Group</label>
+                            <input type="text" class="form-control bordercolor" id="bgroup"
+                                aria-describedby="bgroupHelp" placeholder="" formControlName="bgroup" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="email" class="text-dark">Email</label>
+                            <input type="text" class="form-control bordercolor" id="email" aria-describedby="emailHelp"
+                                placeholder="" formControlName="email" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="spno" class="text-dark">Mobile Number</label>
+                            <input type="text" class="form-control bordercolor" id="spno" aria-describedby="spnoHelp"
+                                placeholder="" formControlName="spno" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="clg" class="text-dark">College/Faculty</label>
+                            <input type="text" class="form-control bordercolor" id="clg" aria-describedby="clgHelp"
+                                placeholder="" formControlName="clg" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="dep" class="text-dark">Department</label>
+                            <input type="text" class="form-control bordercolor" id="dep" aria-describedby="depHelp"
+                                placeholder="" formControlName="dep" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="pro" class="text-dark">Program</label>
+                            <input type="text" class="form-control bordercolor" id="pro" aria-describedby="proHelp"
+                                placeholder="" formControlName="pro" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="sem" class="text-dark">Semester</label>
+                            <input type="text" class="form-control bordercolor" id="sem" aria-describedby="semHelp"
+                                placeholder="" formControlName="sem" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="rno" class="text-dark">Roll No.</label>
+                            <input type="text" class="form-control bordercolor" id="rno" aria-describedby="rnoHelp"
+                                placeholder="" formControlName="rno" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="psw" class="text-dark">Password</label>
+                            <input type="text" class="form-control bordercolor" id="psw" aria-describedby="pswHelp"
+                                placeholder="" formControlName="psw" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="attendence" class="text-dark">Attendence</label>
+                            <input type="text" class="form-control bordercolor" id="attendence"
+                                aria-describedby="attendenceHelp" placeholder="" formControlName="attendence" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="ayear" class="text-dark">Admission Year</label>
+                            <input type="text" class="form-control bordercolor" id="ayear" aria-describedby="ayearHelp"
+                                placeholder="" formControlName="ayear" readonly>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="atype" class="text-dark">Admission Type</label>
+                            <input type="text" class="form-control bordercolor" id="atype" aria-describedby="atypeHelp"
+                                placeholder="" formControlName="atype" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="pincode" class="text-dark">Pincode</label>
+                            <input type="text" class="form-control bordercolor" id="pincode"
+                                aria-describedby="pincodeHelp" placeholder="" formControlName="pincode" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="permanentadd" class="text-dark">Permanent Address</label>
+                            <input type="text" class="form-control bordercolor" id="permanentadd"
+                                aria-describedby="permanentaddHelp" placeholder="" formControlName="permanentadd"
+                                required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="presentadd" class="text-dark">Present Address</label>
+                            <input type="text" class="form-control bordercolor" id="presentadd"
+                                aria-describedby="presentaddHelp" placeholder="" formControlName="presentadd" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="fpno" class="text-dark">Father Mobile No.</label>
+                            <input type="text" class="form-control bordercolor" id="fpno" aria-describedby="fpnoHelp"
+                                placeholder="" formControlName="fpno" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="city" class="text-dark">City</label>
+                            <input type="text" class="form-control bordercolor" id="city" aria-describedby="cityHelp"
+                                placeholder="" formControlName="city" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="state" class="text-dark">State</label>
+                            <input type="text" class="form-control bordercolor" id="state" aria-describedby="stateHelp"
+                                placeholder="" formControlName="state" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="country" class="text-dark">Country</label>
+                            <input type="text" class="form-control bordercolor" id="country"
+                                aria-describedby="countryHelp" placeholder="" formControlName="country" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-danger text-light" (click)="update()">Update</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+</div>

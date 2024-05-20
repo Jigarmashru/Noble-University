@@ -1,0 +1,58 @@
+<div class="loader-wrapper">
+    <div class="loader"></div>
+    <div class="loder-section left-section"></div>
+    <div class="loder-section right-section"></div>
+</div>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a routerLink="/admin/main/student/student_data" class="logo"><img class="down" src="../../../../assets/images/1.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="container-fluid  d-flex justify-content-end">
+            <div class="row align-items-center">
+                <div class="menu">
+                    <ul class="navbar-nav mr-auto">
+                        <li>
+                            <a routerLink="/admin/main/student/student_data" class="mousehover">Student</a>
+                            <ul>
+                                <li><a routerLink="/admin/main/student/student_data">Student Data</a></li>
+                                <li><a routerLink="/admin/main/student/student_cerificate">Student Certificate</a></li>
+                                <li><a routerLink="/admin/main/student/student_complaint">Student Complaint</a></li>
+                                <li><a routerLink="/admin/main/student/student_feedback">Student Feedback</a></li>
+                                <li><a routerLink="/admin/main/student/student_leave">Student Leave</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a routerLink="/admin/main/visitor/visitor_career" class="mousehover">Visitor</a>
+                            <ul>
+                                <li><a routerLink="/admin/main/visitor/visitor_career">Visitor Career</a></li>
+                                <li><a routerLink="/admin/main/visitor/visitor_contact_us">Visitor ContactUs</a></li>
+                                <li><a routerLink="/admin/main/visitor/visitor_enroll_now">Visitor EnrollNow</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a routerLink="/admin/main/faculty_data" class="mousehover">Faculty</a>
+                        </li>
+                        <li>
+                            <a routerLink="/admin/main/change_password" class="mousehover">Change Password</a>
+                        </li>
+                        <li>
+                            <a routerLink="/admin/main/holiday" class="mousehover">Holiday</a>
+                        </li>
+                        <li>
+                            <a routerLink="/admin/main/announcement" class="mousehover">Announcement</a>
+                        </li>
+                        <div class="donate-btn-header d-flex align-items-center">
+                            <a class="dtbtn mousehover text-light" (click)="logout()">Logout</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

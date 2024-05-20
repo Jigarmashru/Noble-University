@@ -1,0 +1,47 @@
+<div class="breatcome_area d-flex align-items-center">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="breatcome_title_inner pb-2">
+        <h2>Visitor Contact Data</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+
+  <div class="row m-3 d-flex justify-content-center">
+    <div class="col-12 shadow_light m-3">
+      <div class="section_title text_left">
+        <div class="section_main_title">
+          <table class="table">
+            <thead>
+              <tr class="bg-danger text-white text-center">
+                <th scope="col">Sr No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone Number</th>
+                <th scope="col">Post</th>
+                <th scope="col">Faculty</th>
+                <th scope="col">Apply For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of career; let j = index">
+                <td scope="row">{{j + 1}}</td>
+                <td>{{i.prefix}} {{i.firstname}} {{i.middlename}} {{i.lastname}}</td>
+                <td>{{i.email}}</td>
+                <td>{{i.pno}}</td>
+                <td>{{i.applyforpost}}</td>
+                <td>{{i.applyforfacultyof}}</td>
+                <td>{{i.applyingfor}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

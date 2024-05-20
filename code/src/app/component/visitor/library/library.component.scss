@@ -1,0 +1,27 @@
+.counter_area{
+    background-image: linear-gradient(to bottom, transparent -50%, #26272792),url(../../../../assets/images/slider/library_counter_main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.counter{
+    color: #ffffff !important;
+}
+
+.counter_desc h5{
+    font-size: x-large !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+}
+
+.breatcome_area{
+    background: url(../../../../assets/images/slider/library_main.png) !important;
+    background-position-y: center !important;
+    background-size: cover !important;
+}
+
+.shadow{
+    box-shadow: 2px 2px 4px 4px grey !important;
+    padding: 2rem !important;
+    border-radius: 1% !important;
+}

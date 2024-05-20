@@ -1,0 +1,60 @@
+<div class="breatcome_area d-flex align-items-center">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="breatcome_title_inner pb-2">
+                <h2>Pay Fees</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid">
+
+    <div class="row m-3 d-flex justify-content-center">
+        <div class="col-12 shadow_light m-3">
+            <h4 class="text-secondary text-center pb-2">Fee Installments</h4>
+            <div class="section_title text-center">
+                <div class="section_main_title">
+                    <table class="table">
+                        <thead>
+                          <tr class="bg-danger text-white">
+                            <th scope="col">Sr No.</th>
+                            <th scope="col">Paid Amount</th>
+                            <th scope="col">Pay Type</th>
+                            <th scope="col">Account Head</th>
+                            <th scope="col">Pay Date</th>
+                            <th scope="col">Receipt No.</th>
+                            <th scope="col">DD / Cheque No. / Order Id</th>
+                            <th scope="col">View / Download Receipt</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let i of feesdata; let j = index">
+                            <td scope="row">{{j + 1}}</td>
+                            <td>{{i.paidamount}}</td>
+                            <td>{{i.accounthead}}</td>
+                            <td>{{i.paytype}}</td>
+                            <td>{{i.paydate}}</td>
+                            <td>{{i.receiptno}}</td>
+                            <td>{{i.orderid}}</td>
+                            <td>{{i.receipt}}</td>
+                          </tr>
+                          <tr>
+                            <td scope="row">Total Paid Amount</td>
+                            <td>1,50,000/-</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

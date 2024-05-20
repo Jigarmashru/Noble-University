@@ -1,0 +1,97 @@
+<div class="breatcome_area d-flex align-items-center">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="breatcome_title_inner pb-2">
+                <h2>Dashboard</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid">
+
+    <div class="row m-3 d-flex justify-content-center">
+        <div class="col-3 shadow_danger m-3 bg-danger" style="background-image:url(../../../../assets/images/dot.png)">
+            <div class="section_title text_left">
+                <div class="section_main_title">
+                    <h3 class="text-light">Syllabus</h3>
+                    <a class="btn btn-light viewbutton" routerLink="/student/main/academics/timetable">View</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 shadow_danger m-3 bg-danger" style="background-image:url(../../../../assets/images/dot.png)">
+            <div class="section_title text_left">
+                <div class="section_main_title">
+                    <h3 class="text-light">Time - Table</h3>
+                    <a class="btn btn-light viewbutton" routerLink="/student/main/academics/timetable">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row m-3 d-flex justify-content-center">
+        <div class="col-4 shadow_light m-3">
+            <div class="section_title text_left">
+                <div class="section_main_title">
+                    <h3 class="text-danger">Attendance Details</h3>
+                    <h5>Attendance <span class="attendencefont"> {{attendence}}% </span></h5>
+                    <a class="btn btn-danger text-light viewbutton"
+                        routerLink="/student/main/academics/attendence">View</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 shadow_light m-3">
+            <div class="section_title text_left">
+                <div class="section_main_title">
+                    <h3 class="text-danger">Result & Reassessment</h3>
+                    <h5>Result & Reassessment</h5>
+                    <a class="btn btn-danger text-light viewbutton" routerLink="/student/main/exam/result">View</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row m-3 d-flex justify-content-center">
+        <div class="col-5 bg-light m-3 p-3">
+            <h4 class="text-secondary pb-2">Syllabus Detail</h4>
+            <div class="section_title text_left shadow_light">
+                <div class="section_main_title">
+                </div>
+            </div>
+        </div>
+        <div class="col-5 bg-light m-3 p-3">
+            <h4 class="text-secondary pb-2">Recent Announcement</h4>
+            <div class="section_title text_left shadow_light">
+                <div class="section_main_title">
+                    <table>
+                        <tr *ngFor="let i of announcement" class="d-flex">
+                            <div class="col-4">
+                                <td>{{i.date}}</td>
+                            </div>
+                            <div class="col-8 d-flex flex-column borderdesign">
+                                <td><b>{{i.title}}</b></td>
+                                <td class="remove">{{i.message}}</td>
+                            </div>
+                        </tr>
+                    </table>
+                    <span class="d-flex justify-content-end"><a class="btn btn-danger text-light viewbutton"
+                            routerLink="/student/main/announcement">Read More</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row m-3 d-flex justify-content-center">
+        <div class="col-6 bg-light m-3 p-3">
+            <h4 class="text-secondary pb-2">Activity Detail</h4>
+            <div class="section_title text_left shadow_light">
+                <div class="section_main_title">
+                    <span class="d-flex justify-content-end"><a class="btn btn-danger text-light viewbutton"
+                            routerLink="/student/main">Read More</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

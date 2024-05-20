@@ -1,0 +1,108 @@
+<div class="breatcome_area d-flex align-items-end">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="breatcome_title">
+					<div class="breatcome_title_inner pb-2">
+						<h2>Pay Fees</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="service_area bg-danger pt-80 pb-70">
+	<div class="container">
+		<div class="row ">
+			<div class="col-lg-12">
+				<div class="section_title text_center mb-5">
+					<div class="section_main_title">
+						<h1 class="text-white">Bank Details</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-6 col-sm-12">
+				<div class="service_style_three pt-60 pl-30 pr-30 mb-5 text_center">
+					<div class="service_style_three_icon mb-35">
+						<img src="../../../../assets/images/slider/payfeesonline_bank.png" height="50%" width="50%" />
+					</div>
+					<div class="service_style_three_title pb-3">
+						<h4>Bank Name</h4>
+					</div>
+					<div class="service_style_three_text">
+						<span> CANARA BANK </span>
+						<p> (E-Syndicate Bank) </p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12">
+				<div class="service_style_three pt-60 pl-30 pr-30 mb-5 text_center">
+					<div class="service_style_three_icon mb-35">
+						<img src="../../../../assets/images/slider/payfeesonline_bank-1.png" height="50%" width="50%" />
+					</div>
+					<div class="service_style_three_title pb-3">
+						<h4>Branch Name</h4>
+					</div>
+					<div class="service_style_three_text">
+						<span>BAMANGAM,</span>
+						<p>JUNAGADH</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12">
+				<div class="service_style_three pt-60 pl-30 pr-30 mb-5 text_center">
+					<div class="service_style_three_icon mb-35">
+						<img src="../../../../assets/images/slider/payfeesonline_rupee-1.png" height="50%" width="50%" />
+					</div>
+					<div class="service_style_three_title pb-3">
+						<h4>IFSC Code</h4>
+					</div>
+					<div class="service_style_three_text">
+						<span>CNRB0017103</span>
+						<p>&nbsp;</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-12">
+				<div class="service_style_three pt-60 pl-30 pr-30 mb-5 text_center">
+					<div class="service_style_three_icon mb-35">
+						<img src="../../../../assets/images/slider/payfeesonline_rupee.png" height="50%" width="50%" />
+					</div>
+					<div class="service_style_three_title pb-3">
+						<h4>Account Type</h4>
+					</div>
+					<div class="service_style_three_text">
+						<span>CURRENT</span>
+						<p>&nbsp;</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<table class="table mt-5">
+	<thead class="thead-light">
+		<tr>
+			<th scope="col">DEPARTMENT</th>
+			<th scope="col">COURSES</th>
+			<th scope="col">ACCOUNT NUMBER</th>
+			<th scope="col">ACCOUNT NAME</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let item of dataArray">
+			<td>{{item.department}}</td>
+			<td>{{item.courses}}</td>
+			<td>{{item.accountnumber}}</td>
+			<td>{{item.accountname}}</td>
+		</tr>
+	</tbody>
+</table>

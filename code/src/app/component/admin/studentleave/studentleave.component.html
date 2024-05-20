@@ -1,0 +1,51 @@
+<div class="breatcome_area d-flex align-items-center">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="breatcome_title_inner pb-2">
+        <h2>Student Leave</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+
+  <div class="row m-3 d-flex justify-content-center">
+    <div class="col-12 shadow_light m-3">
+      <div class="section_title text_left">
+        <div class="section_main_title">
+          <table class="table">
+            <thead>
+              <tr class="bg-danger text-white text-center">
+                <th scope="col">Sr No.</th>
+                <th scope="col">Name</th>
+                <th scope="col">Enrollment Number</th>
+                <th scope="col">Remarks</th>
+                <th scope="col">Kind Of Leave</th>
+                <th scope="col">Leave Type</th>
+                <th scope="col">From Date</th>
+                <th scope="col">To Date</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of leave; let j = index">
+                <td scope="row">{{j + 1}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.enrollmentno}}</td>
+                <td>{{i.remarks}}</td>
+                <td>{{i.kindofleave}}</td>
+                <td>{{i.leavetype}}</td>
+                <td>{{i.fromdate}}</td>
+                <td>{{i.todate}}</td>
+                <td><button class="btn btn-danger text-light" (click)="delete(i._id)">Delete</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

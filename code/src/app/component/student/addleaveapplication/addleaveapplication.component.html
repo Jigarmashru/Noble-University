@@ -1,0 +1,194 @@
+<div class="breatcome_area d-flex align-items-center">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="breatcome_title_inner pb-2">
+                <h2>Leave Application</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid">
+    <div class="row m-3 d-flex justify-content-center">
+        <div class="col-12 shadow_light m-3">
+
+            <div class="d-flex flex-column align-items-center">
+                <ul class="nav nav-tabs my-4" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active forbuttonradius" id="add-tab" data-toggle="tab" href="#add" role="tab"
+                            aria-controls="add" aria-selected="true">Add Leave Application</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link forbuttonradius" id="list-tab" data-toggle="tab" href="#list" role="tab"
+                            aria-controls="list" aria-selected="false">List Leave Application</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content" id="myTabContent">
+
+                <div class="tab-pane fade show active" id="add" role="tabpanel" aria-labelledby="add-tab">
+
+                    <form method="post" [formGroup]="leaveapplication">
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="studentname" class="text-dark">Student Name</label>
+                                    <input type="text" class="form-control bordercolor" id="studentname"
+                                        aria-describedby="nameHelp" placeholder="" formControlName="name" readonly>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="enrollmentno" class="text-dark">Enrollment No.</label>
+                                    <input type="text" class="form-control bordercolor" id="enrollmentno"
+                                        aria-describedby="enrollmentnoHelp" placeholder="" formControlName="eno"
+                                        readonly>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="program" class="text-dark">Program</label>
+                                    <input type="text" class="form-control bordercolor" id="program"
+                                        aria-describedby="programHelp" placeholder="" formControlName="pro" readonly>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="branch" class="text-dark">Branch</label>
+                                    <input type="text" class="form-control bordercolor" id="branch"
+                                        aria-describedby="branchHelp" placeholder="" formControlName="department"
+                                        readonly>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="currentsemester" class="text-dark">Current Semester</label>
+                                    <input type="text" class="form-control bordercolor" id="currentsemester"
+                                        aria-describedby="currentsemesterHelp" placeholder="" formControlName="sem"
+                                        readonly>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="mobileno" class="text-dark">Mobile No.</label>
+                                    <input type="tel" class="form-control bordercolor" id="mobileno"
+                                        aria-describedby="mobilenoHelp" placeholder="" formControlName="pno" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="emailid" class="text-dark">Email ID</label>
+                                    <input type="email" class="form-control bordercolor" id="emailid"
+                                        aria-describedby="emailidHelp" placeholder="" formControlName="mail" required>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="remarks" class="text-dark">Remarks</label>
+                                    <input type="text" class="form-control bordercolor" id="remarks"
+                                        aria-describedby="remarksHelp" placeholder="" formControlName="remarks"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="kindofleave" class="text-dark">Kind of Leave</label>
+                                    <select class="form-control bordercolor" id="kindofleave"
+                                        formControlName="kindofleave" required>
+                                        <option *ngFor="let i of kindofleavemenu">{{i}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="leavetype" class="text-dark">Leave Type</label>
+                                    <select class="form-control bordercolor" id="leavetype" formControlName="leavetype"
+                                        required>
+                                        <option *ngFor="let i of leavetypemenu">{{i}}</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="fromdate" class="text-dark">From Date</label>
+                                    <input type="date" class="form-control bordercolor" id="fromdate"
+                                        aria-describedby="fromdateHelp" placeholder="" formControlName="fromdate"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="todate" class="text-dark">To Date</label>
+                                    <input type="date" class="form-control bordercolor" id="todate"
+                                        aria-describedby="todateHelp" placeholder="" formControlName="todate" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row d-flex justify-content-end mt-3">
+                            <button type="submit" class="btn btn-danger text-light viewbutton"
+                                (click)="submit()">Submit</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
+
+                    <div class="section_title text-center">
+                        <div class="section_main_title">
+                            <table class="table">
+                                <thead>
+                                    <tr class="bg-danger text-white">
+                                        <th scope="col">Sr No.</th>
+                                        <th scope="col">Student Name</th>
+                                        <th scope="col">Enrollment Number</th>
+                                        <th scope="col">Kind Of Leave</th>
+                                        <th scope="col">Leave Type</th>
+                                        <th scope="col">From Date</th>
+                                        <th scope="col">To Date</th>
+                                        <th scope="col">Remarks</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let i of leavedata; let j = index">
+                                        <td scope="row">{{j + 1}}</td>
+                                        <td>{{i.name}}</td>
+                                        <td>{{i.enrollmentno}}</td>
+                                        <td>{{i.kindofleave}}</td>
+                                        <td>{{i.leavetype}}</td>
+                                        <td>{{i.fromdate}}</td>
+                                        <td>{{i.todate}}</td>
+                                        <td>{{i.remarks}}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,44 @@
+<div class="breatcome_area d-flex align-items-center">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="breatcome_title_inner pb-2">
+        <h2>Announcement</h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+
+  <div class="row m-3 d-flex justify-content-center">
+    <div class="col-12 shadow_light m-3">
+      <h4 class="text-secondary text-center pb-2">Announcement !!</h4>
+      <div class="section_title text_left">
+        <div class="section_main_title">
+          <table class="table">
+            <thead>
+              <tr class="bg-danger text-white text-center">
+                <th scope="col">Sr No.</th>
+                <th scope="col">Title</th>
+                <th scope="col">Message</th>
+                <th scope="col">Date</th>
+                <th scope="col">Announcement By</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of announcement; let j = index">
+                <td scope="row">{{j + 1}}</td>
+                <td>{{i.title}}</td>
+                <td>{{i.message}}</td>
+                <td>{{i.date}}</td>
+                <td>Noble University</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

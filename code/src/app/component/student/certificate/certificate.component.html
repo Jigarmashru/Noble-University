@@ -1,0 +1,131 @@
+<div class="breatcome_area d-flex align-items-center">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="breatcome_title_inner pb-2">
+                <h2>Certificate Application</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container-fluid">
+    <div class="row m-3 d-flex justify-content-center">
+        <div class="col-12 shadow_light m-3">
+            <form method="post" [formGroup]="certificateapplication">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="studentname" class="text-dark">Student Name</label>
+                            <input type="text" class="form-control bordercolor" id="studentname"
+                                aria-describedby="nameHelp" placeholder="" formControlName="name" readonly>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="enrollmentno" class="text-dark">Enrollment No.</label>
+                            <input type="text" class="form-control bordercolor" id="enrollmentno"
+                                aria-describedby="enrollmentnoHelp" placeholder="" formControlName="eno" readonly>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="program" class="text-dark">Program</label>
+                            <input type="text" class="form-control bordercolor" id="program"
+                                aria-describedby="programHelp" placeholder="" formControlName="pro" readonly>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="branch" class="text-dark">Branch</label>
+                            <input type="text" class="form-control bordercolor" id="branch"
+                                aria-describedby="branchHelp" placeholder="" formControlName="department" readonly>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="admissionyear" class="text-dark">Admission Year</label>
+                            <input type="text" class="form-control bordercolor" id="admissionyear"
+                                aria-describedby="admissionyearHelp" placeholder="" formControlName="ayear" readonly>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="birthdate" class="text-dark">Birth Date</label>
+                            <input type="text" class="form-control bordercolor" id="birthdate"
+                                aria-describedby="birthdateHelp" placeholder="" formControlName="dob" readonly>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="currentyear" class="text-dark">Current Year</label>
+                            <input type="text" class="form-control bordercolor" id="currentyear"
+                                aria-describedby="currentyearHelp" placeholder="" formControlName="cyear" readonly>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="currentsemester" class="text-dark">Current Semester</label>
+                            <input type="text" class="form-control bordercolor" id="currentsemester"
+                                aria-describedby="currentsemesterHelp" placeholder="" formControlName="sem" readonly>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="mobileno" class="text-dark">Mobile No.</label>
+                            <input type="tel" class="form-control bordercolor" id="mobileno"
+                                aria-describedby="mobilenoHelp" placeholder="" formControlName="pno" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="emailid" class="text-dark">Email ID</label>
+                            <input type="email" class="form-control bordercolor" id="emailid"
+                                aria-describedby="emailidHelp" placeholder="" formControlName="mail" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="certificate" class="text-dark">Certificate</label>
+                            <select class="form-control bordercolor" id="certificate" formControlName="certi" required>
+                                <option *ngFor="let i of certificatedata">{{i}}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="purposecertificate" class="text-dark">Purpose Certificate</label>
+                            <select class="form-control bordercolor" id="purposecertificate"
+                                formControlName="purposecerti" required>
+                                <option *ngFor="let i of purposecertificatedata">{{i}}</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-end mt-3">
+                    <button type="submit" class="btn btn-danger text-light viewbutton"
+                        (click)="submit()">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

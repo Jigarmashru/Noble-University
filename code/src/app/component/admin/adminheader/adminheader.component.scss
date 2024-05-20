@@ -1,0 +1,16 @@
+.mousehover:hover{
+    color: #ff0000;
+}
+.mousehover{
+    font-size: small !important;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+}
+.menu > ul{
+    text-align: center !important;
+}
+.profilelist{
+    text-align: right !important;
+}

@@ -1,0 +1,102 @@
+<div class="loader-wrapper">
+    <div class="loader"></div>
+    <div class="loder-section left-section"></div>
+    <div class="loder-section right-section"></div>
+</div>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a routerLink="home" class="logo"><img class="down" src="../../../../assets/images/1.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <div class="container-fluid  d-flex justify-content-end">
+            <div class="row align-items-center">
+                <div class="menu">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="profilelist">
+                            <a class="mousehover">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="5%">
+                                    <path
+                                        d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                                </svg>Profile</a>
+                            <ul>
+                                <li><a routerLink="/student/main/profile/my_profile">{{name}}</a></li>
+                                <li><a routerLink="/student/main/profile/my_profile">My Profile</a></li>
+                                <li><a routerLink="/student/main/profile/change_password">Change Password</a></li>
+                                <li><a (click)="logout()">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a routerLink="/student/main/home/dashboard" class="mousehover">Home</a>
+                            <ul>
+                                <li><a routerLink="/student/main/home/dashboard">Dashboard</a></li>
+                                <li><a routerLink="/student/main/home/profile">Profile</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a routerLink="/student/main/fees/all_pay_fees" class="mousehover">Fees</a>
+                            <ul>
+                                <li><a routerLink="/student/main/fees/all_pay_fees">All Pay Fees</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a routerLink="/student/main/academics/timetable" class="mousehover">Academics</a>
+                            <ul>
+                                <li><a routerLink="/student/main/academics/timetable">Time - Table</a></li>
+                                <li><a routerLink="/student/main/academics/todays_teaching_update">Today's Teaching Update</a></li>
+                                <li><a routerLink="/student/main/academics/attendence">Attendence</a></li>
+                                <li><a routerLink="/student/main/academics/add_leave_application">Add Leave Application</a></li>
+                                <li><a routerLink="/student/main/academics/view_lesson_plan">View Lesson Plan</a></li>
+                                <li><a routerLink="/student/main/academics/old_paper_download">Old Paper Download</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a routerLink="/student/main/exam/hall_ticket" class="mousehover">Exam</a>
+                            <ul>
+                                <li><a routerLink="/student/main/exam/hall_ticket">Hall Ticket</a></li>
+                                <li><a routerLink="/student/main/exam/result">Result</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a routerLink="/student/main/e-learning/enroll_to_learning_management_group"
+                                class="mousehover">E-Learning</a>
+                            <ul>
+                                <li><a routerLink="/student/main/e-learning/enroll_to_learning_management_group">Enroll To Learning
+                                        Management Group</a></li>
+                                <li><a routerLink="/student/main/e-learning/view_learning_management_group">View Learning Management
+                                        Group</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a routerLink="/student/main/hostel/room_transfer_request" class="mousehover">Hostel</a>
+                            <ul>
+                                <li><a routerLink="/student/main/hostel/room_transfer_request">Room Transfer Request</a></li>
+                                <li><a routerLink="/student/main/hostel/leave_application">Leave Application</a></li>
+                                <li><a routerLink="/student/main/hostel/permanent_leave">Permanent Leave</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a routerLink="/student/main/holidays" class="mousehover">Holidays</a>
+                        </li>
+                        <li>
+                            <a routerLink="/student/main/announcement" class="mousehover">Announcement</a>
+                        </li>
+                        <li>
+                            <a routerLink="/student/main/new_grievance_registration" class="mousehover">New Grievance Registration</a>
+                        </li>
+                        <li>
+                            <a routerLink="/student/main/certificate" class="mousehover">Certificate</a>
+                        </li>
+                        <li>
+                            <a routerLink="/student/main/feedback_for_faculty" class="mousehover">Feedback For Faculty</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,114 @@
+<div class="breatcome_area d-flex align-items-end">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breatcome_title">
+                    <div class="breatcome_title_inner pb-2">
+                        <h2>Career</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="about_area pt-85 pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-xs-6 d-flex align-items-center">
+                <div class="section_title text_left mb-40 mt-3">
+                    <div class="section_sub_title uppercase mb-3">
+                        <form [formGroup]="careerform">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label for="exampleInputPrefix">Prefix</label>
+                                        <select class="form-control" id="exampleInputPrefix" formControlName="prefix" required>
+                                            <option selected disabled>Select Prefix</option>
+                                            <option *ngFor="let prefixlist of prefix">{{prefixlist}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label for="exampleInputFirstName">First</label>
+                                        <input type="text" class="form-control" id="exampleInputFirstName"
+                                            aria-describedby="nameHelp" placeholder="Enter first name"
+                                            formControlName="firstname" required/>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label for="exampleInputMiddleName">Middle</label>
+                                        <input type="text" class="form-control" id="exampleInputMiddleName"
+                                            aria-describedby="nameHelp" placeholder="Enter middle name"
+                                            formControlName="middlename" required/>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="form-group">
+                                        <label for="exampleInputLastName">Last</label>
+                                        <input type="text" class="form-control" id="exampleInputLastName"
+                                            aria-describedby="nameHelp" placeholder="Enter last name"
+                                            formControlName="lastname" required/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPhoneNumber">Phone Number</label>
+                                <input type="tel" class="form-control" id="exampleInputPhoneNumber"
+                                    aria-describedby="pnoHelp" placeholder="Enter Contact Number"
+                                    formControlName="pno" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail"
+                                    aria-describedby="emailHelp" placeholder="Enter Your Email"
+                                    formControlName="email" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormApplyForPost">Apply For Post</label>
+                                <select class="form-control" id="exampleFormApplyForPost"
+                                    formControlName="applyforpost" required>
+                                    <option selected disabled>Select Post</option>
+                                    <option *ngFor="let afp of post">{{afp}}</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormApplyForFacultyOf">Apply For Faculty Of</label>
+                                <select class="form-control" id="exampleFormApplyForFacultyOf"
+                                    formControlName="applyforfacultyof" required>
+                                    <option selected disabled>Select Department</option>
+                                    <option *ngFor="let affo of department">{{affo}}</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormApplyingFor">Applying For</label>
+                                <select class="form-control" id="exampleFormApplyingFor" formControlName="applyingfor" required>
+                                    <option selected disabled>Select Faculty</option>
+                                    <option *ngFor="let af of faculty">{{af}}</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormFile">Add CV</label>
+                                <input type="file" class="form-control bg-transparent" id="exampleFormFile"
+                                    formControlName="file" required/>
+                            </div>
+                            <button type="submit" class="btn btn-danger" (click)="submit()">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 col-xs-6 d-flex align-items-center justify-content-end ">
+                <div class="single_about_thumb">
+                    <div class="single_about_thumb_inner h-100 w-100 ">
+                        <img src="../../../../assets/images/slider/carrer_about.jpeg" height="500" width="500"
+                            style="border-radius: 5%;" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
